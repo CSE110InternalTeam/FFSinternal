@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_e7398fa18897e4918016d8dfc4ff9d1c7eef0acc.jar" />
+    </item>
+    <item
+        jar="/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_6614a954c316d229971f688b382e10ccd01cee77.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FFS</string>
+    <string name="facebook_app_id">553766554782697</string>
+    <string name="title_activity_signed_in">SignedInActivity</string>
+</resources>
