@@ -1,6 +1,7 @@
 package com.example.cse110mb260t14.ffs;
 
 import android.content.Intent;
+import android.content.pm.PackageInstaller;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,10 +9,13 @@ import android.view.View;
 
 import com.facebook.FacebookSdk;
 import com.facebook.login.widget.LoginButton;
+import com.parse.FindCallback;
 import com.parse.LogInCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
+import com.parse.ParseQuery;
+import com.parse.ParseSession;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
@@ -20,6 +24,8 @@ import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
     LoginButton loginButton;
+    public final static String EXTRA_MESSAGE = "com.example.cse110mb260t14.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +48,27 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (LoginButton) findViewById(R.id.login_button);
 
         if (ParseUser.getCurrentUser().isAuthenticated()) {
-            Log.d("MyApp", "Username is " + ParseUser.getCurrentUser().getUsername());
-            System.out.print("User name is " + ParseUser.getCurrentUser().getUsername());
-            Intent intent = new Intent(LoginActivity.this, DrawerMenuActivity.class);
-            startActivity(intent);
+
+            final String user_name = ParseUser.getCurrentUser().getUsername();
+
+
+            ParseQuery<ParseSession> query = ParseQuery.getQuery("UserMaster");
+            query.whereEqualTo("user", user_name);
+            query.findInBackground(new FindCallback<ParseSession>() {
+                public void done(List<ParseSession> objects, ParseException e) {
+                    if (e == null) {
+                        Log.d("MY APP", "FOUND THE USER was logged in. The user has has object id: " + user_name);
+                        Intent intent = new Intent(LoginActivity.this, DrawerMenuActivity.class);
+                        String message = user_name.toString();
+                        intent.putExtra(EXTRA_MESSAGE, message);
+                        startActivity(intent);
+                    } else {
+                        Log.d("MyApp", "UNABLE TO FIND USER");
+                    }
+                }
+            });
+
+
         }
 
         loginButton.setOnClickListener(new View.OnClickListener() {
