@@ -40,6 +40,14 @@ public class LoginActivity extends AppCompatActivity {
         final List<String> permissions = Arrays.asList("public_profile", "email");
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
+
+        if (ParseUser.getCurrentUser().isAuthenticated()) {
+            Log.d("MyApp", "Username is " + ParseUser.getCurrentUser().getUsername());
+            System.out.print("User name is " + ParseUser.getCurrentUser().getUsername());
+            Intent intent = new Intent(LoginActivity.this, DrawerMenuActivity.class);
+            startActivity(intent);
+        }
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,8 +72,10 @@ public class LoginActivity extends AppCompatActivity {
                                 });
                             }
                         } else {
-                            System.out.println("3rd");
+                            System.out.println("3rd" + user.getEmail() + user.getUsername());
                             Log.d("MyApp", "User logged in through Facebook!");
+                            Intent intent = new Intent(LoginActivity.this, DrawerMenuActivity.class);
+                            startActivity(intent);
                         }
 
                     }

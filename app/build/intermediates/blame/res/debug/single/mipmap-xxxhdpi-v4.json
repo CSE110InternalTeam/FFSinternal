@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
         "source": "/Users/georgezhe/AndroidStudioProjects/FFS/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }

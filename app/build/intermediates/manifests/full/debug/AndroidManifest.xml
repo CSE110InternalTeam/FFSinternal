@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="23" />
+
     <!-- Facebook permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -52,6 +53,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.cse110mb260t14.ffs.LoginActivity" />
         </activity>
+        <activity
+            android:name="com.example.cse110mb260t14.ffs.DrawerMenuActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
