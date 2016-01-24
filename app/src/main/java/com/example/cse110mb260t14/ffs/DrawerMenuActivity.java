@@ -15,6 +15,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.login.widget.LoginButton;
+
 
 public class DrawerMenuActivity extends ActionBarActivity {
 
@@ -23,6 +25,7 @@ public class DrawerMenuActivity extends ActionBarActivity {
     private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
+
 
 
     TextView usernameTextView;
@@ -57,7 +60,23 @@ public class DrawerMenuActivity extends ActionBarActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(DrawerMenuActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case 0:
+                        Intent Profile = new Intent(DrawerMenuActivity.this, ProfileActivity.class);
+                        startActivity(Profile);
+                        break;
+                    case 1:
+                        Intent Categories = new Intent(DrawerMenuActivity.this, CategoriesActivity.class);
+                        startActivity(Categories);
+                        break;
+                    case 2:
+                        Intent TransactionHistory = new Intent(DrawerMenuActivity.this, TransactionHistoryActivity.class);
+                        startActivity(TransactionHistory);
+                        break;
+
+
+                }
+                //Toast.makeText(DrawerMenuActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
             }
         });
     }
