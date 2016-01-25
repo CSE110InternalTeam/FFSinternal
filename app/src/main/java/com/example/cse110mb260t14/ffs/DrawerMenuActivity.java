@@ -1,5 +1,6 @@
 package com.example.cse110mb260t14.ffs;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -11,7 +12,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.facebook.login.widget.LoginButton;
 
 
 public class DrawerMenuActivity extends ActionBarActivity {
@@ -22,6 +26,9 @@ public class DrawerMenuActivity extends ActionBarActivity {
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
 
+
+
+    TextView usernameTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,22 +37,46 @@ public class DrawerMenuActivity extends ActionBarActivity {
         mDrawerList = (ListView)findViewById(R.id.navList);mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
 
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
+
+
         addDrawerItems();
         setupDrawer();
+
+        usernameTextView = (TextView) findViewById(R.id.usernameTextView);
+        usernameTextView.setText(message);
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setHomeButtonEnabled(true);
     }
 
     private void addDrawerItems() {
-        String[] osArray = { "Android", "iOS", "Windows", "OS X", "Linux" };
+        String[] osArray = { "Profile", "Categories", "Transaction History", "Logout"};
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(DrawerMenuActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case 0:
+                        Intent Profile = new Intent(DrawerMenuActivity.this, ProfileActivity.class);
+                        startActivity(Profile);
+                        break;
+                    case 1:
+                        Intent Categories = new Intent(DrawerMenuActivity.this, CategoriesActivity.class);
+                        startActivity(Categories);
+                        break;
+                    case 2:
+                        Intent TransactionHistory = new Intent(DrawerMenuActivity.this, TransactionHistoryActivity.class);
+                        startActivity(TransactionHistory);
+                        break;
+
+
+                }
+                //Toast.makeText(DrawerMenuActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
             }
         });
     }

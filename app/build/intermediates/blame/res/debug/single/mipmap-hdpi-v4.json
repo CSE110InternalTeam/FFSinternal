@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
+        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
         "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
