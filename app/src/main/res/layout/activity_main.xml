@@ -33,6 +33,13 @@
             android:text="Change to Username"
             />
 
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@id/login_button"/>
+
     </RelativeLayout>
 
     <!-- Side navigation drawer UI -->
@@ -42,5 +49,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="left|start"
         android:background="#ffeeeeee"/>
+
 
 </android.support.v4.widget.DrawerLayout>

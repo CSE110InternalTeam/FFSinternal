@@ -57,6 +57,40 @@
             android:name="com.example.cse110mb260t14.ffs.DrawerMenuActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN_ACTIVITY" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        <activity
+            android:name="com.example.cse110mb260t14.ffs.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.example.cse110mb260t14.ffs.DrawerMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cse110mb260t14.ffs.DrawerMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.cse110mb260t14.ffs.CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:parentActivityName="com.example.cse110mb260t14.ffs.DrawerMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cse110mb260t14.ffs.DrawerMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.cse110mb260t14.ffs.TransactionHistoryActivity"
+            android:label="@string/title_activity_transaction_history"
+            android:parentActivityName="com.example.cse110mb260t14.ffs.DrawerMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cse110mb260t14.ffs.DrawerMenuActivity" />
+        </activity>
     </application>
 
 </manifest>

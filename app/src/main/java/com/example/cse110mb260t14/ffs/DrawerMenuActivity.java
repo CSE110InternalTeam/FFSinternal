@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +17,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.login.widget.LoginButton;
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseFacebookUtils;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
+import java.util.Arrays;
+import java.util.List;
+import android.content.Intent;
 
 public class DrawerMenuActivity extends ActionBarActivity {
 
@@ -47,6 +56,18 @@ public class DrawerMenuActivity extends ActionBarActivity {
 
         usernameTextView = (TextView) findViewById(R.id.usernameTextView);
         usernameTextView.setText(message);
+
+        final List<String> permissions = Arrays.asList("public_profile", "email");
+
+        LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ParseUser.logOut();
+                Intent intent = new Intent(DrawerMenuActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setHomeButtonEnabled(true);
