@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
 
-        if (ParseUser.getCurrentUser().isAuthenticated()) {
+        if (ParseUser.getCurrentUser() != null &&  ParseUser.getCurrentUser().isAuthenticated()) {
 
             final String user_name = ParseUser.getCurrentUser().getUsername();
 
