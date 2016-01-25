@@ -24,6 +24,7 @@ import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
     LoginButton loginButton;
+    static boolean parseInitialized = false;
     public final static String EXTRA_MESSAGE = "com.example.cse110mb260t14.MESSAGE";
 
     @Override
@@ -33,11 +34,13 @@ public class LoginActivity extends AppCompatActivity {
 
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/android/guide#local-datastore
-        Parse.enableLocalDatastore(this);
-
-        Parse.initialize(this);
-        // TODO: possibly change context
-        ParseFacebookUtils.initialize(this);
+        if (!parseInitialized) {
+            Parse.enableLocalDatastore(this);
+            Parse.initialize(this);
+            // TODO: possibly change context
+            ParseFacebookUtils.initialize(this);
+            parseInitialized = true;
+        }
 
         // Facebook login setup
         FacebookSdk.sdkInitialize(getApplicationContext());
