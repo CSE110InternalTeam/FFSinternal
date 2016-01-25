@@ -13,8 +13,65 @@
     tools:showIn="@layout/activity_categories">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CATEGORIES PAGE"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/categoriesTitle"
+            android:text="Categories!"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewCategories">
+                <TableRow>
+                <TextView
+                    android:text="Category 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Category 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Category 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Category 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Category 1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </TableLayout>
+
+
+
 </RelativeLayout>
