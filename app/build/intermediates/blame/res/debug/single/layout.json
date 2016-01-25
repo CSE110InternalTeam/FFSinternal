@@ -4,16 +4,16 @@
         "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/content_signed_in.xml"
     },
     {
-        "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+        "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
@@ -24,12 +24,12 @@
         "source": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
-    },
-    {
         "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/georgezhe/AndroidStudioProjects/FFS/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
@@ -156,20 +156,20 @@
         "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.9.0/res/layout/com_facebook_activity_layout.xml"
     },
     {
-        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/app_bar_main.xml",
-        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/app_bar_main.xml"
-    },
-    {
         "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/content_main.xml",
         "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/content_main.xml"
     },
     {
-        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/app_bar_main.xml",
+        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/app_bar_main.xml"
     },
     {
         "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
@@ -284,12 +284,12 @@
         "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
-    },
-    {
         "merged": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/GabrielMechali/Desktop/CSE110/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/GabrielMechali/Desktop/FFSinternal/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
